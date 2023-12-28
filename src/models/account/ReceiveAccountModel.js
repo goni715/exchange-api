@@ -6,6 +6,10 @@ const ReceiveAccountSchema = new mongoose.Schema(
             type: String,
             required: [true, "name is required"],
             unique:true
+        },
+        reserved: {
+            type: String,
+            required: [true, "reserved is required"],
         }
     },
     { timestamps: true, versionKey:false}
@@ -13,5 +17,4 @@ const ReceiveAccountSchema = new mongoose.Schema(
 
 
 const ReceiveAccountModel = mongoose.model("receiveAccounts", ReceiveAccountSchema);
-
 module.exports = ReceiveAccountModel

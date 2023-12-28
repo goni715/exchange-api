@@ -5,6 +5,8 @@ const DetailsByIDService = require("../../services/common/DetailsService");
 const GetAllService = require("../../services/common/GetAllService");
 const AccountCreateService = require("../../services/account/AccountCreateService");
 const AccountUpdateService = require("../../services/account/AccountUpdateService");
+const DetailsService = require("../../services/common/DetailsService");
+const ReceiveAccountModel = require("../../models/account/ReceiveAccountModel");
 
 
 exports.CreateSendAccount=async (req, res) => {
@@ -19,10 +21,10 @@ exports.CreateSendAccount=async (req, res) => {
 //     await DeleteService(req, res, AccountModel)
 // }
 //
-// exports.GetAccount=async (req, res) => {
-//     await DetailsByIDService(req, res, AccountModel);
-// }
-//
+exports.GetSendAccount=async (req, res) => {
+    await DetailsService(req, res, SendAccountModel);
+}
+
 exports.GetAllSendAccount=async(req,res)=>{
     let Projection = {$project:{_id:1, name:1}};
     await GetAllService(req, res, SendAccountModel,Projection)

@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a79f867-92cb-4719-a8a1-68b1dfb6c06a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/controllers/account/AccountController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/account/AccountModel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/account/ReceiveAccountController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/account/ReceiveAccountController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/account/SendAccountController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/account/SendAccountController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/account/ReceiveAccountModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/account/ReceiveAccountModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/account/SendAccountModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/account/SendAccountModel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/accountRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/accountRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/contactRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/contactRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/common/CreateService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/common/CreateService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/common/DetailsService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/common/DetailsService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +53,10 @@
       <workItem from="1703740155790" duration="167000" />
       <workItem from="1703744119995" duration="33000" />
       <workItem from="1703744446255" duration="130000" />
+      <workItem from="1703750796290" duration="826000" />
+      <workItem from="1703751989501" duration="142000" />
+      <workItem from="1703752136456" duration="146000" />
+      <workItem from="1703758123869" duration="245000" />
     </task>
     <servers />
   </component>

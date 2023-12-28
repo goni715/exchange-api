@@ -6,6 +6,10 @@ const SendAccountSchema = new mongoose.Schema(
             type: String,
             required: [true, "name is required"],
             unique:true
+        },
+        minimum:{
+            type: String,
+            required: [true, "minimum is required"],
         }
     },
     { timestamps: true, versionKey:false}
@@ -13,5 +17,4 @@ const SendAccountSchema = new mongoose.Schema(
 
 
 const SendAccountModel = mongoose.model("sendAccounts", SendAccountSchema);
-
 module.exports = SendAccountModel
