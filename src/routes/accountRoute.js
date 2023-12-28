@@ -1,5 +1,4 @@
 const express =require('express');
-const AccountController = require("../controllers/account/AccountController");
 const SendAccountController = require("../controllers/account/SendAccountController");
 const ReceiveAccountController = require("../controllers/account/ReceiveAccountController");
 
@@ -11,11 +10,9 @@ const router = express.Router();
 
 
 
-router.post('/create-account', AuthVerifyMiddleware, IsAdmin, AccountController.CreateAccount);
-router.get("/get-all-account", AccountController.GetAllAccount);
-router.delete('/delete-account/:id', AuthVerifyMiddleware, IsAdmin, AccountController.DeleteAccount);
-router.put('/update-account/:id', AuthVerifyMiddleware, IsAdmin, AccountController.UpdateAccount);
-router.get('/get-account/:id', AuthVerifyMiddleware, IsAdmin, AccountController.GetAccount);
+// router.delete('/delete-account/:id', AuthVerifyMiddleware, IsAdmin, AccountController.DeleteAccount);
+// router.put('/update-account/:id', AuthVerifyMiddleware, IsAdmin, AccountController.UpdateAccount);
+// router.get('/get-account/:id', AuthVerifyMiddleware, IsAdmin, AccountController.GetAccount);
 
 
 //Send-Account
