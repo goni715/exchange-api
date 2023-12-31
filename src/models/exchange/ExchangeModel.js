@@ -2,6 +2,11 @@ const mongoose = require("mongoose");
 
 const ExchangeSchema = new mongoose.Schema(
     {
+        userId:{
+            type:mongoose.Schema.Types.ObjectId,
+            ref:"users",
+            required: [true, "sendAccountId is required"],
+        },
         email:{
             type: String,
             required: [true, "email is required"],
