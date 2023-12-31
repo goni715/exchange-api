@@ -7,6 +7,7 @@ const authRouter = require('./src/routes/authRoute');
 const contactRouter = require('./src/routes/contactRoute')
 const accountRouter = require('./src/routes/accountRoute')
 const rateRouter = require('./src/routes/rateRoute')
+const exchangeRouter = require('./src/routes/exchangeRoute')
 
 
 const bodyParser = require('body-parser');
@@ -59,6 +60,7 @@ app.use('/api/auth', authRouter);
 app.use('/api/contact', contactRouter)
 app.use('/api/account', accountRouter)
 app.use('/api/rate', rateRouter)
+app.use('/api/exchange', exchangeRouter)
 
 
 

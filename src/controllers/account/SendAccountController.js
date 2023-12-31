@@ -6,7 +6,6 @@ const GetAllService = require("../../services/common/GetAllService");
 const AccountCreateService = require("../../services/account/AccountCreateService");
 const AccountUpdateService = require("../../services/account/AccountUpdateService");
 const DetailsService = require("../../services/common/DetailsService");
-const ReceiveAccountModel = require("../../models/account/ReceiveAccountModel");
 
 
 exports.CreateSendAccount=async (req, res) => {
