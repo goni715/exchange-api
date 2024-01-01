@@ -9,6 +9,8 @@ const router = express.Router();
 
 
 router.post('/create-exchange',AuthVerifyMiddleware, ExchangeController.CreateExchange);
+router.get('/get-user-exchanges',AuthVerifyMiddleware, ExchangeController.GetUserExchanges);
+
 // router.get("/get-all-contact", AuthVerifyMiddleware, IsAdmin, ContactController.GetAllContact);
 // router.delete('/delete-contact/:id', AuthVerifyMiddleware, IsAdmin, ContactController.DeleteContact);
 // router.patch('/update-contact/:id', AuthVerifyMiddleware, IsAdmin, ContactController.UpdateContact);
