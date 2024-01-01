@@ -4,10 +4,10 @@ const AccountCreateService = async (req, res, AccountModel) => {
     let existingAccount = await AccountModel.aggregate([{$match:{name: reqBody['name']}}]);
     if(existingAccount.length === 0){
         let data = await AccountModel.create(reqBody)
-        res.status(201).json({message: "success", result:data});
+        res.status(201).json({message: "success", data:data});
      }
      else{
-         res.status(409).json({message: "fail", result:"This account is Already Existed"});
+         res.status(409).json({message: "fail", data:"This account is Already Existed"});
      }
   }
   catch(error){

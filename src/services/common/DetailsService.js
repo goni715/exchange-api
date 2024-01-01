@@ -10,10 +10,10 @@ const DetailsService= async (req, res, Model) => {
             {$match: QueryObject}
         ]);
 
-        res.status(200).json({message: "success", result: data[0]});
+        res.status(200).json({message: "success", data: data[0]});
 
     } catch (error) {
-        res.status(500).json({message: "error", result: error.toString()});
+        res.status(500).json({message: "error", data: error.toString()});
     }
 
 

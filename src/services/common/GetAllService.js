@@ -4,10 +4,10 @@ const GetAllService= async (req,res,DataModel, Projection) => {
         let  data =await DataModel.aggregate([
             Projection
           ]);
-        res.status(200).json({message: "success", result: data});
+        res.status(200).json({message: "success", data: data});
     }
     catch (error){
-        res.status(500).json({message: "fail", result: error.toString()});
+        res.status(500).json({message: "fail", data: error.toString()});
     }
 }
 module.exports=GetAllService

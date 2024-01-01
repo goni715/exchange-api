@@ -1,11 +1,7 @@
 const ExchangeModel = require("../../models/exchange/ExchangeModel")
-const DeleteService = require("../../services/common/DeleteService");
-const DetailsService = require("../../services/common/DetailsService");
-const GetAllService = require("../../services/common/GetAllService");
-const AccountCreateService = require("../../services/account/AccountCreateService");
-const AccountUpdateService = require("../../services/account/AccountUpdateService");
 const ExchangeCreateService = require("../../services/exchange/ExchangeCreateService");
 const GetUserExchangeService = require("../../services/exchange/GetUserExchangeService");
+const GetAllExchangesService = require("../../services/exchange/GetAllExchangesService");
 
 
 exports.CreateExchange=async (req, res) => {
@@ -14,4 +10,8 @@ exports.CreateExchange=async (req, res) => {
 
 exports.GetUserExchanges=async (req, res) => {
     await GetUserExchangeService(req,res,ExchangeModel);
+}
+
+exports.GetAllExchange=async (req, res) => {
+    await GetAllExchangesService(req,res,ExchangeModel);
 }

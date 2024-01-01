@@ -24,14 +24,14 @@ const CreateRateService = async (req, res, RateModel) => {
 
         if (rateCount.length === 0) {
             const data = await RateModel.create(PostBody);
-            res.status(200).json({message: "success", result:data});
+            res.status(200).json({message: "success", data:data});
         }
         else {
-            res.status(409).json({message: "fail", result: "already rate created"});
+            res.status(409).json({message: "fail", data: "already rate created"});
        }
     }
     catch(error){
-        res.status(500).json({message: "error", result: error.toString()});
+        res.status(500).json({message: "error", data: error.toString()});
     }
 
 }
