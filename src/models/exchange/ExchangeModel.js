@@ -30,11 +30,28 @@ const ExchangeSchema = new mongoose.Schema(
         information: {
             type:Object,
             required: [true, "information is required"],
+        },
+        processType:{
+            type:"String",
+            default: "Manually"
+        },
+        status: {
+            type: String,
+            default: "Pending",
+            enum: [
+                "Processing",
+                "Cancelled",
+                "Completed",
+                "Timeout",
+                "Denied",
+                "Awaiting Payment",
+                "Awaiting Confirmation"
+            ],
         }
     },
     { timestamps: true, versionKey:false}
 )
 
 
-const ExchangeModel = mongoose.model("exchange", ExchangeSchema);
+const ExchangeModel = mongoose.model("exchanges", ExchangeSchema);
 module.exports = ExchangeModel
