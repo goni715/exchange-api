@@ -39,6 +39,7 @@ const ExchangeSchema = new mongoose.Schema(
             type: String,
             default: "Pending",
             enum: [
+                "Pending",
                 "Processing",
                 "Cancelled",
                 "Completed",
