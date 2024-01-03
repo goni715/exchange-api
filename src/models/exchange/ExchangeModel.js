@@ -7,6 +7,10 @@ const ExchangeSchema = new mongoose.Schema(
             ref:"users",
             required: [true, "sendAccountId is required"],
         },
+        transactionOrBatch:{
+            type: String,
+            required: [true, "transactionOrBatch is required"],
+        },
         email:{
             type: String,
             required: [true, "email is required"],

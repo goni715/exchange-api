@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a79f867-92cb-4719-a8a1-68b1dfb6c06a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/exchange/ExchangeController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/exchange/ExchangeController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/exchangeRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/exchangeRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/account/AccountCreateService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/account/AccountCreateService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/common/DetailsService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/common/DetailsService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/common/GetAllService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/common/GetAllService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/rate/CreateRateService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/rate/CreateRateService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/exchange/ExchangeModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/exchange/ExchangeModel.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +77,7 @@
       <workItem from="1704126711711" duration="84000" />
       <workItem from="1704127713320" duration="23000" />
       <workItem from="1704134595157" duration="865000" />
+      <workItem from="1704266510821" duration="172000" />
     </task>
     <servers />
   </component>
