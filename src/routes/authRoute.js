@@ -10,6 +10,7 @@ const router = express.Router();
 
 router.post('/register',UserController.Registration);
 router.post('/login',UserController.Login);
+router.post('/admin-login',UserController.AdminLogin);
 
 
 router.post("/apply-doctor", AuthVerifyMiddleware, UserController.ApplyDoctor);

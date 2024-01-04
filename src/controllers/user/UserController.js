@@ -12,6 +12,7 @@ const CreateNewPasswordService = require("../../services/ForgotPassword/CreateNe
 const RecoverPasswordVerifyEmailService = require("../../services/RecoverPassword/RecoverPasswordVerifyEmailService");
 const ResetPasswordService = require("../../services/RecoverPassword/ResetPasswordService");
 const UpdateService = require("../../services/common/UpdateService");
+const AdminLoginService = require("../../services/user/AdminLoginService");
 
 exports.Registration = async (req, res) =>{
     await UserCreateService(req,res,UserModel);
@@ -20,6 +21,11 @@ exports.Registration = async (req, res) =>{
 exports.Login = async (req, res) =>{
     await UserLoginService(req,res,UserModel);
 }
+
+exports.AdminLogin=async(req,res)=>{
+    await AdminLoginService(req,res,UserModel)
+}
+
 
 exports.ApplyDoctor = async (req, res) =>{
     await ApplyDoctorService(req,res,UserModel, DoctorModel);

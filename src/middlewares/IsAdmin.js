@@ -3,7 +3,6 @@ const UserModel = require("../models/user/UserModel");
 
 
 module.exports= async (req,res,next)=>{
-
     try{
         const Email = req.headers.email;
         const adminUser = await UserModel.findOne( {email: Email });

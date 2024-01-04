@@ -7,9 +7,9 @@
     <list default="true" id="0a79f867-92cb-4719-a8a1-68b1dfb6c06a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/user/UserController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/user/UserController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/user/UserModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/user/UserModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middlewares/IsAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middlewares/IsAdmin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/authRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/authRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/common/GetAllService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/common/GetAllService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/contactRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/contactRoute.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +88,9 @@
       <workItem from="1704287752769" duration="371000" />
       <workItem from="1704288497277" duration="33000" />
       <workItem from="1704304570198" duration="96000" />
-      <workItem from="1704348716859" duration="521000" />
+      <workItem from="1704348716859" duration="669000" />
+      <workItem from="1704354602181" duration="602000" />
+      <workItem from="1704357403728" duration="144000" />
     </task>
     <servers />
   </component>
