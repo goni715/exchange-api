@@ -15,6 +15,8 @@ router.post('/login',UserController.Login);
 router.post("/apply-doctor", AuthVerifyMiddleware, UserController.ApplyDoctor);
 
 router.get("/get-all-user", AuthVerifyMiddleware, UserController.GetAllUser);
+router.put("/update-user/:id", AuthVerifyMiddleware, UserController.UpdateUser);
+
 
 //ForgotPassword
 router.post("/forgot-password-verify-email",UserController.ForgotPasswordVerifyEmail);

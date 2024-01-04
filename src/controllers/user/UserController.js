@@ -11,6 +11,7 @@ const ForgotPasswordVerifyOtpService = require("../../services/ForgotPassword/Fo
 const CreateNewPasswordService = require("../../services/ForgotPassword/CreateNewPasswordService");
 const RecoverPasswordVerifyEmailService = require("../../services/RecoverPassword/RecoverPasswordVerifyEmailService");
 const ResetPasswordService = require("../../services/RecoverPassword/ResetPasswordService");
+const UpdateService = require("../../services/common/UpdateService");
 
 exports.Registration = async (req, res) =>{
     await UserCreateService(req,res,UserModel);
@@ -25,10 +26,13 @@ exports.ApplyDoctor = async (req, res) =>{
 }
 
 exports.GetAllUser=async(req,res)=>{
-    const projection = {$project: {_id:1, email:1, name:1, isDoctor:1}}
+    const projection = {$project: {_id:1, email:1, username:1, role:1}}
     await GetAllService(req,res,UserModel, projection)
 }
 
+exports.UpdateUser=async(req,res)=>{
+    await UpdateService(req,res,UserModel)
+}
 
 
 //Step-01
