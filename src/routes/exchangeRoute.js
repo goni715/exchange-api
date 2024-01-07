@@ -10,6 +10,8 @@ router.post('/create-exchange',AuthVerifyMiddleware, ExchangeController.CreateEx
 router.get('/get-user-exchanges',AuthVerifyMiddleware, ExchangeController.GetUserExchanges);
 router.get('/get-all-exchange',AuthVerifyMiddleware, ExchangeController.GetAllExchange);
 router.get('/get-exchange/:id',AuthVerifyMiddleware, ExchangeController.GetExchange);
+router.get('/get-completed-exchanges',AuthVerifyMiddleware, ExchangeController.GetCompletedExchanges);
+router.get('/get-recent-completed-exchanges', ExchangeController.GetRecentCompletedExchanges);
 router.post('/send-exchange-confirm-email',AuthVerifyMiddleware, ExchangeController.SendExchangeConfirmEmail);
 router.put('/update-exchange-status/:id',AuthVerifyMiddleware, ExchangeController.UpdateExchangeStatus);
 

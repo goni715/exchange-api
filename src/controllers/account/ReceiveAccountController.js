@@ -24,6 +24,6 @@ exports.GetReceiveAccount=async (req, res) => {
 }
 
 exports.GetAllReceiveAccount=async(req,res)=>{
-    let Projection = {$project:{_id:1, name:1}};
+    let Projection = {$project:{_id:1, name:1, reserved:1}};
     await GetAllService(req, res, ReceiveAccountModel,Projection)
 }
