@@ -15,12 +15,9 @@ exports.UpdateContact=async(req,res)=>{
     await UpdateService(req,res,ContactModel)
 }
 
-
 exports.DeleteContact=async(req,res)=>{
     await DeleteService(req, res, ContactModel)
 }
-
-
 
 exports.GetContact=async (req, res) => {
     await DetailsByIDService(req, res, ContactModel);

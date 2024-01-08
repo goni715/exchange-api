@@ -1,19 +1,17 @@
 const express =require('express');
 const RateController = require("../controllers/rate/RateController");
+const AuthVerifyMiddleware = require("../middlewares/AuthVerifyMiddleware");
+const IsAdmin = require("../middlewares/IsAdmin");
+
+
 
 
 const router = express.Router();
 
 
 
-router.post('/create-rate', RateController.CreateRate);
+router.post('/create-rate',  AuthVerifyMiddleware, IsAdmin, RateController.CreateRate);
 router.post('/get-rate', RateController.GetRate);
-
-// router.get("/get-all-rate", RateController.GetAllContact);
-// router.delete('/delete-rate/:id', RateController.DeleteContact);
-// router.patch('/update-rate/:id', RateController.UpdateContact);
-// router.get('/get-rate/:id', RateController.GetContact);
-
 
 
 
