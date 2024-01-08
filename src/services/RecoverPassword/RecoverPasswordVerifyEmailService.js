@@ -18,7 +18,7 @@ const RecoverPasswordVerifyEmailService = async (req, res, UserModel) => {
             // Database Second process
             await ResetTokenModel.create({email: email, token:Token})
 
-            const resetURL = `Hi, Please follow this link to reset Your Password. This link is valid till 10 minutes from now. <a href='http://localhost:5173/reset-password/${email}/${Token}'>Click Here</>`;
+            const resetURL = `Hi, Please follow this link to reset Your Password. This link is valid till 10 minutes from now. <a href='https://exchange-front.netlify.app/reset-password/${email}/${Token}'>Click Here</>`;
 
             // Email Send
             let SendEmail = await SendEmailUtilityTwo(email,"Hey User","Exchange MERN", resetURL)

@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0a79f867-92cb-4719-a8a1-68b1dfb6c06a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/account/ReceiveAccountController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/account/ReceiveAccountController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/account/SendAccountController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/account/SendAccountController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/accountRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/accountRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/account/AccountUpdateService.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/common/UpdateService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/common/UpdateService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/RecoverPassword/RecoverPasswordVerifyEmailService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/RecoverPassword/RecoverPasswordVerifyEmailService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +104,8 @@
       <workItem from="1704696513736" duration="797000" />
       <workItem from="1704699066361" duration="24000" />
       <workItem from="1704704364881" duration="44000" />
+      <workItem from="1704736963744" duration="322000" />
+      <workItem from="1704737520602" duration="59000" />
     </task>
     <servers />
   </component>
