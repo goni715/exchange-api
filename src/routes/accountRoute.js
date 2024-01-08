@@ -10,11 +10,6 @@ const router = express.Router();
 
 
 
-// router.delete('/delete-account/:id', AuthVerifyMiddleware, IsAdmin, AccountController.DeleteAccount);
-// router.put('/update-account/:id', AuthVerifyMiddleware, IsAdmin, AccountController.UpdateAccount);
-// router.get('/get-account/:id', AuthVerifyMiddleware, IsAdmin, AccountController.GetAccount);
-
-
 //Send-Account
 router.post('/create-send-account', SendAccountController.CreateSendAccount);
 router.get("/get-all-send-account", SendAccountController.GetAllSendAccount);
@@ -26,6 +21,7 @@ router.get('/get-send-account/:id', SendAccountController.GetSendAccount);
 router.post('/create-receive-account', ReceiveAccountController.CreateReceiveAccount);
 router.get("/get-all-receive-account", ReceiveAccountController.GetAllReceiveAccount);
 router.get('/get-receive-account/:id', ReceiveAccountController.GetReceiveAccount);
+router.put('/update-receive-account/:id',AuthVerifyMiddleware, IsAdmin, ReceiveAccountController.UpdateReceiveAccount);
 
 
 

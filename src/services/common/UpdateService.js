@@ -12,7 +12,7 @@ const UpdateService= async (req, res,DataModel) => {
 
     }
     catch (error) {
-        res.status(500).json({message: "error", data: error.toString()});
+        res.status(500).json({message: "error", data: error});
     }
 }
 module.exports=UpdateService
