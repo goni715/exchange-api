@@ -4,6 +4,7 @@ const GetCompletedExchangesService = async (req, res, ExchangeModel) => {
 
        let data = await ExchangeModel.aggregate([
            {$match: QueryObject},
+           {$sort : { createdAt: -1 }},
            {$lookup: {from: "sendaccounts", localField: "sendAccountId", foreignField: "_id", as: "sendAccount"}},
            {$lookup: {from: "receiveaccounts", localField: "receiveAccountId", foreignField: "_id", as: "receiveAccount"}},
            {$lookup: {from: "users", localField: "userId", foreignField: "_id", as: "user"}}
