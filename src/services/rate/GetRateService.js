@@ -1,13 +1,13 @@
 const mongoose = require("mongoose");
 const GetRateService = async (req, res, RateModel) => {
   try{
-      const firstId = req.body['firstId'];
-      const secondId = req.body['secondId'];
+      const sendAccountId = req.body['sendAccountId'];
+      const receiveAccountId = req.body['receiveAccountId'];
       const ObjectId = mongoose.Types.ObjectId;
 
       //First-Database-Process//get-data
       const rateCount = await RateModel.aggregate([
-          {$match: {accounts: {$all: [new ObjectId(firstId), new ObjectId(secondId)]}}}
+          {$match: {sendAccountId: new ObjectId(sendAccountId), receiveAccountId: new ObjectId(receiveAccountId)}}
       ]);
 
 

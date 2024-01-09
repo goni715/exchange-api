@@ -2,9 +2,14 @@ const mongoose = require("mongoose");
 
 const RateSchema = new mongoose.Schema(
     {
-        accounts: [
-            { type: mongoose.Schema.Types.ObjectId}
-        ],
+        sendAccountId:{
+            type:mongoose.Schema.Types.ObjectId,
+            required: [true, "sendAccountId is required"],
+        },
+        receiveAccountId:{
+            type:mongoose.Schema.Types.ObjectId,
+            required: [true, "receiveAccountId is required"],
+        },
         unit: {
             type:String
         },

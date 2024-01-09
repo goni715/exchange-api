@@ -10,6 +10,10 @@ const ReceiveAccountSchema = new mongoose.Schema(
         reserved: {
             type: String,
             required: [true, "reserved is required"],
+        },
+        hidden: {
+            type: Boolean,
+            default: false
         }
     },
     { timestamps: true, versionKey:false}

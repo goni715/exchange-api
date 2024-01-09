@@ -12,6 +12,7 @@ const router = express.Router();
 
 router.post('/create-rate',  AuthVerifyMiddleware, IsAdmin, RateController.CreateRate);
 router.post('/get-rate', RateController.GetRate);
+router.get('/get-all-rate', RateController.GetAllRate);
 
 
 

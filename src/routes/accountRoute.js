@@ -14,6 +14,7 @@ const router = express.Router();
 router.post('/create-send-account', AuthVerifyMiddleware, IsAdmin, SendAccountController.CreateSendAccount);
 router.get("/get-all-send-account", SendAccountController.GetAllSendAccount);
 router.get('/get-send-account/:id', SendAccountController.GetSendAccount);
+router.put('/update-send-account/:id',AuthVerifyMiddleware, IsAdmin, SendAccountController.UpdateSendAccount);
 
 
 

@@ -10,6 +10,10 @@ const SendAccountSchema = new mongoose.Schema(
         minimum:{
             type: String,
             required: [true, "minimum is required"],
+        },
+        hidden: {
+            type: Boolean,
+            default: false
         }
     },
     { timestamps: true, versionKey:false}
