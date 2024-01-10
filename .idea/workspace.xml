@@ -6,16 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0a79f867-92cb-4719-a8a1-68b1dfb6c06a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/account/ReceiveAccountController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/account/ReceiveAccountController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/account/SendAccountController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/account/SendAccountController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/rate/RateController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/rate/RateController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/account/ReceiveAccountModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/account/ReceiveAccountModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/account/SendAccountModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/account/SendAccountModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/rate/RateModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/rate/RateModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/accountRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/accountRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/exchange/GetAllExchangesService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/exchange/GetAllExchangesService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/rate/CreateRateService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/rate/CreateRateService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/rate/GetRateService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/rate/GetRateService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/rateRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/rateRoute.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,6 +118,8 @@
       <workItem from="1704826973314" duration="324000" />
       <workItem from="1704829222818" duration="5000" />
       <workItem from="1704830358119" duration="57000" />
+      <workItem from="1704831906875" duration="397000" />
+      <workItem from="1704872885900" duration="194000" />
     </task>
     <servers />
   </component>
