@@ -23,7 +23,7 @@ const RecoverPasswordVerifyEmailService = async (req, res, UserModel) => {
             // Email Send
             let SendEmail = await SendEmailUtilityTwo(email,"Hey User","Exchange MERN", resetURL)
 
-            res.status(200).json({message: "success", result:SendEmail});
+            res.status(200).json({message: "success"});
         }
         else{
             res.status(404).json({message: "fail", result:"Could not Find this Email!"});
