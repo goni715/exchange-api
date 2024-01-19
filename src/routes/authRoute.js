@@ -1,6 +1,7 @@
 const express =require('express');
 const UserController = require("../controllers/user/UserController");
 const AuthVerifyMiddleware = require("../middlewares/AuthVerifyMiddleware");
+const IsAdmin = require("../middlewares/IsAdmin");
 
 
 const router = express.Router();
@@ -13,11 +14,12 @@ router.post('/login',UserController.Login);
 router.post('/admin-login',UserController.AdminLogin);
 
 
-router.post("/apply-doctor", AuthVerifyMiddleware, UserController.ApplyDoctor);
+
 
 router.get("/get-all-user", AuthVerifyMiddleware, UserController.GetAllUser);
 router.put("/update-user/:id", AuthVerifyMiddleware, UserController.UpdateUser);
-
+router.put("/make-admin/:id", AuthVerifyMiddleware,  UserController.MakeAdmin);
+router.put("/remove-admin/:id", AuthVerifyMiddleware,  UserController.RemoveAdmin);
 
 //ForgotPassword
 router.post("/forgot-password-verify-email",UserController.ForgotPasswordVerifyEmail);

@@ -13,6 +13,8 @@ const RecoverPasswordVerifyEmailService = require("../../services/RecoverPasswor
 const ResetPasswordService = require("../../services/RecoverPassword/ResetPasswordService");
 const UpdateService = require("../../services/common/UpdateService");
 const AdminLoginService = require("../../services/user/AdminLoginService");
+const RemoveAdminService = require("../../services/user/RemoveAdminService");
+const MakeAdminService = require("../../services/user/MakeAdminService");
 
 exports.Registration = async (req, res) =>{
     await UserCreateService(req,res,UserModel);
@@ -38,6 +40,15 @@ exports.GetAllUser=async(req,res)=>{
 
 exports.UpdateUser=async(req,res)=>{
     await UpdateService(req,res,UserModel)
+}
+
+exports.MakeAdmin=async(req,res)=>{
+    await MakeAdminService(req,res,UserModel)
+}
+
+//remove admin
+exports.RemoveAdmin=async(req,res)=>{
+    await RemoveAdminService(req,res,UserModel)
 }
 
 
