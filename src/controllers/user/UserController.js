@@ -15,6 +15,7 @@ const UpdateService = require("../../services/common/UpdateService");
 const AdminLoginService = require("../../services/user/AdminLoginService");
 const RemoveAdminService = require("../../services/user/RemoveAdminService");
 const MakeAdminService = require("../../services/user/MakeAdminService");
+const DeleteService = require("../../services/common/DeleteService");
 
 exports.Registration = async (req, res) =>{
     await UserCreateService(req,res,UserModel);
@@ -41,6 +42,11 @@ exports.GetAllUser=async(req,res)=>{
 exports.UpdateUser=async(req,res)=>{
     await UpdateService(req,res,UserModel)
 }
+
+exports.DeleteUser=async(req,res)=>{
+    await DeleteService(req,res,UserModel)
+}
+
 
 exports.MakeAdmin=async(req,res)=>{
     await MakeAdminService(req,res,UserModel)

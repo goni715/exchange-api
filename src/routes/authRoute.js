@@ -18,6 +18,7 @@ router.post('/admin-login',UserController.AdminLogin);
 
 router.get("/get-all-user", AuthVerifyMiddleware, UserController.GetAllUser);
 router.put("/update-user/:id", AuthVerifyMiddleware, UserController.UpdateUser);
+router.delete("/delete-user/:id", AuthVerifyMiddleware, IsAdmin, UserController.DeleteUser);
 router.put("/make-admin/:id", AuthVerifyMiddleware,  UserController.MakeAdmin);
 router.put("/remove-admin/:id", AuthVerifyMiddleware,  UserController.RemoveAdmin);
 
