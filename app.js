@@ -11,10 +11,10 @@ const exchangeRouter = require('./src/routes/exchangeRoute')
 const informationRouter = require('./src/routes/informationRoute')
 
 
-const bodyParser = require('body-parser');
 
 
 //Security Middleware Import
+const bodyParser = require('body-parser');
 const rateLimit = require('express-rate-limit');
 const helmet = require('helmet');
 const mongoSanitize = require('express-mongo-sanitize');
