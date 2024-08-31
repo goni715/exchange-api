@@ -65,11 +65,12 @@ app.use('/api/exchange', exchangeRouter)
 app.use('/api/information', informationRouter)
 
 
-
 //Undefined Route
 app.use('*',(req,res)=>{
       res.status(404).json({status:"Fail", data:"Route Not Found"});
 });
+
+
 
 
 module.exports=app;
