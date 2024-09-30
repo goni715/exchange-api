@@ -6,7 +6,7 @@ const SendEmailUtilityTwo= async (EmailTo, EmailText, EmailSubject, ResetURL) =>
         let transporter = nodemailer.createTransport({
             host: "smtp.gmail.com",
             port: 587,
-            secure: false, // true for port 465, false for other ports
+            secure: process.env.NODE_ENV === "production", // true for port 465, false for other ports
             auth: {
                 user: process.env.SMTP_USERNAME,
                 pass: process.env.SMTP_PASSWORD
@@ -16,7 +16,7 @@ const SendEmailUtilityTwo= async (EmailTo, EmailText, EmailSubject, ResetURL) =>
 
 
         let mailOptions = {
-            from: `Manually Money Exchange ${process.env.SMTP_FROM}`,
+            from: `Money Exchange ${process.env.SMTP_FROM}`,
             to: EmailTo,
             subject: EmailSubject,
            // text: EmailText,
