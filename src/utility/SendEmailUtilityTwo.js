@@ -5,7 +5,7 @@ const SendEmailUtilityTwo= async (EmailTo, EmailText, EmailSubject, ResetURL) =>
         //transporter
         let transporter = nodemailer.createTransport({
             host: "smtp.gmail.com",
-            port: 587,
+            port: 465, //false for 587
             secure: process.env.NODE_ENV === "production", // true for port 465, false for other ports
             auth: {
                 user: process.env.SMTP_USERNAME,
