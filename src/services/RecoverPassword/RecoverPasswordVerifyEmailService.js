@@ -22,7 +22,7 @@ const RecoverPasswordVerifyEmailService = async (req, res, UserModel) => {
       let SendEmail = await SendEmailUtilityTwo(
         email,
         "Hey User",
-        "Exchange MERN",
+        "Reset Password",
         resetURL
       );
 

@@ -3,26 +3,23 @@ const nodemailer = require('nodemailer');
 const SendEmailUtilityTwo= async (EmailTo, EmailText, EmailSubject, ResetURL) => {
 
         //transporter
-        let transporter = await nodemailer.createTransport({
-            host: "mail.teamrabbil.com",
+        let transporter = nodemailer.createTransport({
+            host: "smtp.gmail.com",
             port: 587,
-            secure: false,
+            secure: false, // true for port 465, false for other ports
             auth: {
-                user: "info@teamrabbil.com",
-                pass: '~sR4[bhaC[Qs'
-            },
-            tls: {
-                rejectUnauthorized: false
+                user: process.env.SMTP_USERNAME,
+                pass: process.env.SMTP_PASSWORD
             }
         })
 
 
 
         let mailOptions = {
-            from: 'Exchange MERN <info@teamrabbil.com>',
+            from: `Manually Money Exchange ${process.env.SMTP_FROM}`,
             to: EmailTo,
             subject: EmailSubject,
-            text: EmailText,
+           // text: EmailText,
             html: ResetURL, // html body
         };
 
