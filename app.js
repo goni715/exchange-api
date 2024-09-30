@@ -31,7 +31,7 @@ app.use(mongoSanitize());
 app.use(hpp());
 app.use(
   cors({
-    origin: ["https://exchange-front-goni.netlify.app"],
+    origin: ["https://exchange-front-goni.netlify.app", "https://exchange-admin-goni.netlify.app"],
     credentials: true,
   })
 );
